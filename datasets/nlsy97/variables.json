@@ -1,0 +1,416 @@
+{
+  "variables": [
+    {
+      "column": "person_id",
+      "reference": "R00001.00",
+      "raw_column": "R0000100",
+      "question": "PUBID",
+      "survey_year": "1997",
+      "description_ru": "Идентификатор респондента",
+      "unit": "identifier"
+    },
+    {
+      "column": "sex_code",
+      "reference": "R05363.00",
+      "raw_column": "R0536300",
+      "question": "KEY!SEX",
+      "survey_year": "1997",
+      "description_ru": "Пол: 1 — мужской, 2 — женский",
+      "unit": "nominal"
+    },
+    {
+      "column": "birth_year",
+      "reference": "R05364.02",
+      "raw_column": "R0536402",
+      "question": "KEY!BDATE_Y",
+      "survey_year": "1997",
+      "description_ru": "Год рождения",
+      "unit": "year"
+    },
+    {
+      "column": "sample_type_code",
+      "reference": "R12358.00",
+      "raw_column": "R1235800",
+      "question": "CV_SAMPLE_TYPE",
+      "survey_year": "1997",
+      "description_ru": "Тип выборки: основная или дополнительная",
+      "unit": "nominal"
+    },
+    {
+      "column": "variance_stratum",
+      "reference": "R14897.00",
+      "raw_column": "R1489700",
+      "question": "VSTRAT",
+      "survey_year": "1997",
+      "description_ru": "Страта для расчёта дисперсии",
+      "unit": "design"
+    },
+    {
+      "column": "variance_psu",
+      "reference": "R14898.00",
+      "raw_column": "R1489800",
+      "question": "VPSU",
+      "survey_year": "1997",
+      "description_ru": "Первичная единица выборки для расчёта дисперсии",
+      "unit": "design"
+    },
+    {
+      "column": "age",
+      "reference": "T66513.00",
+      "raw_column": "T6651300",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": "2011",
+      "description_ru": "Возраст на дату интервью",
+      "unit": "years"
+    },
+    {
+      "column": "highest_grade_completed",
+      "reference": "T66565.00",
+      "raw_column": "T6656500",
+      "question": "CV_HGC_EVER_EDT",
+      "survey_year": "2011",
+      "description_ru": "Максимальный завершённый класс/год обучения",
+      "unit": "ordinal"
+    },
+    {
+      "column": "family_income_2010_usd",
+      "reference": "T66567.00",
+      "raw_column": "T6656700",
+      "question": "CV_INCOME_FAMILY",
+      "survey_year": "2011",
+      "description_ru": "Валовой семейный доход за 2010 год; верхние значения topcoded",
+      "unit": "USD/year"
+    },
+    {
+      "column": "household_size",
+      "reference": "T66569.00",
+      "raw_column": "T6656900",
+      "question": "CV_HH_SIZE",
+      "survey_year": "2011",
+      "description_ru": "Число членов домохозяйства",
+      "unit": "count"
+    },
+    {
+      "column": "education_code",
+      "reference": "T66572.00",
+      "raw_column": "T6657200",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": "2011",
+      "description_ru": "Наивысшая полученная степень на дату интервью",
+      "unit": "categorical"
+    },
+    {
+      "column": "job01_hours_per_week",
+      "reference": "T66600.00",
+      "raw_column": "T6660000",
+      "question": "CV_HRS_PER_WEEK.01",
+      "survey_year": "2011",
+      "description_ru": "Обычные часы в неделю на работе № 01; это не сумма по всем работам",
+      "unit": "hours/week"
+    },
+    {
+      "column": "interview_month",
+      "reference": "T66614.01",
+      "raw_column": "T6661401",
+      "question": "CV_INTERVIEW_DATE~M",
+      "survey_year": "2011",
+      "description_ru": "Фактический месяц интервью в волне 2011",
+      "unit": "month"
+    },
+    {
+      "column": "interview_year",
+      "reference": "T66614.02",
+      "raw_column": "T6661402",
+      "question": "CV_INTERVIEW_DATE~Y",
+      "survey_year": "2011",
+      "description_ru": "Фактический год интервью в волне 2011",
+      "unit": "year"
+    },
+    {
+      "column": "marital_cohabitation_code",
+      "reference": "T66628.00",
+      "raw_column": "T6662800",
+      "question": "CV_MARSTAT",
+      "survey_year": "2011",
+      "description_ru": "Семейное положение и совместное проживание",
+      "unit": "nominal"
+    },
+    {
+      "column": "biological_children_in_household",
+      "reference": "T66631.00",
+      "raw_column": "T6663100",
+      "question": "CV_BIO_CHILD_HH",
+      "survey_year": "2011",
+      "description_ru": "Биологические дети в домохозяйстве",
+      "unit": "count"
+    },
+    {
+      "column": "biological_children_nonresident",
+      "reference": "T66632.00",
+      "raw_column": "T6663200",
+      "question": "CV_BIO_CHILD_NR",
+      "survey_year": "2011",
+      "description_ru": "Биологические дети вне домохозяйства",
+      "unit": "count"
+    },
+    {
+      "column": "sampling_weight_raw",
+      "reference": "T66650.00",
+      "raw_column": "T6665000",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": "2011",
+      "description_ru": "Вес волны 15, cumulative cases; два подразумеваемых десятичных знака",
+      "unit": "weight*100"
+    },
+    {
+      "column": "received_wage_income_2010",
+      "reference": "T75454.00",
+      "raw_column": "T7545400",
+      "question": "YINC-1400",
+      "survey_year": "2011",
+      "description_ru": "Получал доход от наёмной работы в 2010: 1 — да, 0 — нет",
+      "unit": "binary"
+    },
+    {
+      "column": "wage_income_2010_reported_usd",
+      "reference": "T75456.00",
+      "raw_column": "T7545600",
+      "question": "YINC-1700",
+      "survey_year": "2011",
+      "description_ru": "Названная сумма заработка за 2010; верхние 2% topcoded",
+      "unit": "USD/year"
+    },
+    {
+      "column": "height_feet",
+      "reference": "T76356.00",
+      "raw_column": "T7635600",
+      "question": "YSAQ-000A000001",
+      "survey_year": "2011",
+      "description_ru": "Рост: целые футы",
+      "unit": "feet"
+    },
+    {
+      "column": "height_inches_part",
+      "reference": "T76357.00",
+      "raw_column": "T7635700",
+      "question": "YSAQ-000A000002",
+      "survey_year": "2011",
+      "description_ru": "Рост: оставшиеся дюймы",
+      "unit": "inches"
+    },
+    {
+      "column": "weight_lb",
+      "reference": "T76358.00",
+      "raw_column": "T7635800",
+      "question": "YSAQ-000B",
+      "survey_year": "2011",
+      "description_ru": "Масса тела со слов респондента",
+      "unit": "pounds"
+    },
+    {
+      "column": "general_health_code",
+      "reference": "T77038.00",
+      "raw_column": "T7703800",
+      "question": "YHEA-100",
+      "survey_year": "2011",
+      "description_ru": "Самооценка здоровья: 1 — excellent … 5 — poor",
+      "unit": "ordinal"
+    },
+    {
+      "column": "sleep_hours_weeknight",
+      "reference": "T77072.00",
+      "raw_column": "T7707200",
+      "question": "YHEA-650",
+      "survey_year": "2011",
+      "description_ru": "Часы сна в обычную ночь перед рабочим днём",
+      "unit": "hours/night"
+    },
+    {
+      "column": "vigorous_status",
+      "reference": "T77055.00",
+      "raw_column": "T7705500",
+      "question": "YHEA-600AA",
+      "survey_year": "2011",
+      "description_ru": "Интенсивная активность: 0 — никогда, 1 — выполняет, 2 — не способен выполнять",
+      "unit": "nominal"
+    },
+    {
+      "column": "vigorous_frequency",
+      "reference": "T77056.00",
+      "raw_column": "T7705600",
+      "question": "YHEA-600ABA",
+      "survey_year": "2011",
+      "description_ru": "Интенсивная активность: Частота в указанной отдельно единице времени",
+      "unit": "count/period"
+    },
+    {
+      "column": "vigorous_frequency_unit",
+      "reference": "T77057.00",
+      "raw_column": "T7705700",
+      "question": "YHEA-600ABB",
+      "survey_year": "2011",
+      "description_ru": "Интенсивная активность: 1 — день, 2 — неделя, 3 — месяц, 4 — год",
+      "unit": "unit code"
+    },
+    {
+      "column": "vigorous_duration",
+      "reference": "T77058.00",
+      "raw_column": "T7705800",
+      "question": "YHEA-600ACA",
+      "survey_year": "2011",
+      "description_ru": "Интенсивная активность: Длительность в указанной отдельно единице времени",
+      "unit": "duration"
+    },
+    {
+      "column": "vigorous_duration_unit",
+      "reference": "T77059.00",
+      "raw_column": "T7705900",
+      "question": "YHEA-600ACB",
+      "survey_year": "2011",
+      "description_ru": "Интенсивная активность: 1 — минуты, 2 — часы",
+      "unit": "unit code"
+    },
+    {
+      "column": "moderate_status",
+      "reference": "T77060.00",
+      "raw_column": "T7706000",
+      "question": "YHEA-600BA",
+      "survey_year": "2011",
+      "description_ru": "Умеренная активность: 0 — никогда, 1 — выполняет, 2 — не способен выполнять",
+      "unit": "nominal"
+    },
+    {
+      "column": "moderate_frequency",
+      "reference": "T77061.00",
+      "raw_column": "T7706100",
+      "question": "YHEA-600BBA",
+      "survey_year": "2011",
+      "description_ru": "Умеренная активность: Частота в указанной отдельно единице времени",
+      "unit": "count/period"
+    },
+    {
+      "column": "moderate_frequency_unit",
+      "reference": "T77062.00",
+      "raw_column": "T7706200",
+      "question": "YHEA-600BBB",
+      "survey_year": "2011",
+      "description_ru": "Умеренная активность: 1 — день, 2 — неделя, 3 — месяц, 4 — год",
+      "unit": "unit code"
+    },
+    {
+      "column": "moderate_duration",
+      "reference": "T77063.00",
+      "raw_column": "T7706300",
+      "question": "YHEA-600BCA",
+      "survey_year": "2011",
+      "description_ru": "Умеренная активность: Длительность в указанной отдельно единице времени",
+      "unit": "duration"
+    },
+    {
+      "column": "moderate_duration_unit",
+      "reference": "T77064.00",
+      "raw_column": "T7706400",
+      "question": "YHEA-600BCB",
+      "survey_year": "2011",
+      "description_ru": "Умеренная активность: 1 — минуты, 2 — часы",
+      "unit": "unit code"
+    },
+    {
+      "column": "strength_status",
+      "reference": "T77065.00",
+      "raw_column": "T7706500",
+      "question": "YHEA-600CA",
+      "survey_year": "2011",
+      "description_ru": "Силовая активность: 0 — никогда, 1 — выполняет, 2 — не способен выполнять",
+      "unit": "nominal"
+    },
+    {
+      "column": "strength_frequency",
+      "reference": "T77066.00",
+      "raw_column": "T7706600",
+      "question": "YHEA-600CBA",
+      "survey_year": "2011",
+      "description_ru": "Силовая активность: Частота в указанной отдельно единице времени",
+      "unit": "count/period"
+    },
+    {
+      "column": "strength_frequency_unit",
+      "reference": "T77067.00",
+      "raw_column": "T7706700",
+      "question": "YHEA-600CBB",
+      "survey_year": "2011",
+      "description_ru": "Силовая активность: 1 — день, 2 — неделя, 3 — месяц, 4 — год",
+      "unit": "unit code"
+    },
+    {
+      "column": "strength_duration",
+      "reference": "T77068.00",
+      "raw_column": "T7706800",
+      "question": "YHEA-600CCA",
+      "survey_year": "2011",
+      "description_ru": "Силовая активность: Длительность в указанной отдельно единице времени",
+      "unit": "duration"
+    },
+    {
+      "column": "strength_duration_unit",
+      "reference": "T77069.00",
+      "raw_column": "T7706900",
+      "question": "YHEA-600CCB",
+      "survey_year": "2011",
+      "description_ru": "Силовая активность: 1 — минуты, 2 — часы",
+      "unit": "unit code"
+    },
+    {
+      "column": "education",
+      "description_ru": "Текстовая расшифровка education_code; категория, не числовая шкала.",
+      "derived": true
+    },
+    {
+      "column": "sex",
+      "description_ru": "Текстовая расшифровка sex_code.",
+      "derived": true
+    },
+    {
+      "column": "sampling_weight",
+      "description_ru": "sampling_weight_raw / 100; учтены два подразумеваемых десятичных знака.",
+      "derived": true
+    },
+    {
+      "column": "height_cm",
+      "description_ru": "(height_feet * 12 + height_inches_part) * 2.54; пропуск любого компонента сохраняется.",
+      "derived": true
+    },
+    {
+      "column": "weight_kg",
+      "description_ru": "weight_lb * 0.45359237.",
+      "derived": true
+    },
+    {
+      "column": "wage_income_2010_usd",
+      "description_ru": "Названная сумма заработка; пропуск заменён нулём только при явном ответе received_wage_income_2010 = 0.",
+      "derived": true
+    },
+    {
+      "column": "wage_income_value_source",
+      "description_ru": "reported / explicit_no_wage_income / missing — происхождение суммы заработка.",
+      "derived": true
+    }
+  ],
+  "missing_codes": {
+    "-1": "refusal",
+    "-2": "don't know",
+    "-3": "invalid skip",
+    "-4": "valid skip",
+    "-5": "non-interview"
+  },
+  "education_codes": {
+    "0": "None",
+    "1": "GED",
+    "2": "High school diploma",
+    "3": "Associate degree",
+    "4": "Bachelor's degree",
+    "5": "Master's degree",
+    "6": "PhD",
+    "7": "Professional degree"
+  }
+}

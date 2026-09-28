@@ -1,0 +1,524 @@
+{
+  "waves": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019,
+    2021,
+    2023
+  ],
+  "variables": [
+    {
+      "reference": "S38011.00",
+      "raw_column": "S3801100",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2004,
+      "column": "age"
+    },
+    {
+      "reference": "S38137.01",
+      "raw_column": "S3813701",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2004,
+      "column": "education_code"
+    },
+    {
+      "reference": "S38616.00",
+      "raw_column": "S3861600",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2004,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "S47994.00",
+      "raw_column": "S4799400",
+      "question": "YINC-1400",
+      "survey_year": 2004,
+      "column": "received_wage"
+    },
+    {
+      "reference": "S47996.00",
+      "raw_column": "S4799600",
+      "question": "YINC-1700",
+      "survey_year": 2004,
+      "column": "wage_reported",
+      "income_year": 2003
+    },
+    {
+      "reference": "S54010.00",
+      "raw_column": "S5401000",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2005,
+      "column": "age"
+    },
+    {
+      "reference": "S54133.00",
+      "raw_column": "S5413300",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2005,
+      "column": "education_code"
+    },
+    {
+      "reference": "S54442.00",
+      "raw_column": "S5444200",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2005,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "S65008.00",
+      "raw_column": "S6500800",
+      "question": "YINC-1400",
+      "survey_year": 2005,
+      "column": "received_wage"
+    },
+    {
+      "reference": "S65010.00",
+      "raw_column": "S6501000",
+      "question": "YINC-1700",
+      "survey_year": 2005,
+      "column": "wage_reported",
+      "income_year": 2004
+    },
+    {
+      "reference": "S75012.00",
+      "raw_column": "S7501200",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2006,
+      "column": "age"
+    },
+    {
+      "reference": "S75142.00",
+      "raw_column": "S7514200",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2006,
+      "column": "education_code"
+    },
+    {
+      "reference": "S75455.00",
+      "raw_column": "S7545500",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2006,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "S84963.00",
+      "raw_column": "S8496300",
+      "question": "YINC-1400",
+      "survey_year": 2006,
+      "column": "received_wage"
+    },
+    {
+      "reference": "S84965.00",
+      "raw_column": "S8496500",
+      "question": "YINC-1700",
+      "survey_year": 2006,
+      "column": "wage_reported",
+      "income_year": 2005
+    },
+    {
+      "reference": "T00085.00",
+      "raw_column": "T0008500",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2007,
+      "column": "age"
+    },
+    {
+      "reference": "T00146.00",
+      "raw_column": "T0014600",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2007,
+      "column": "education_code"
+    },
+    {
+      "reference": "T00421.00",
+      "raw_column": "T0042100",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2007,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "T08896.00",
+      "raw_column": "T0889600",
+      "question": "YINC-1400",
+      "survey_year": 2007,
+      "column": "received_wage"
+    },
+    {
+      "reference": "T08898.00",
+      "raw_column": "T0889800",
+      "question": "YINC-1700",
+      "survey_year": 2007,
+      "column": "wage_reported",
+      "income_year": 2006
+    },
+    {
+      "reference": "T20111.00",
+      "raw_column": "T2011100",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2008,
+      "column": "age"
+    },
+    {
+      "reference": "T20167.00",
+      "raw_column": "T2016700",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2008,
+      "column": "education_code"
+    },
+    {
+      "reference": "T20225.00",
+      "raw_column": "T2022500",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2008,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "T30028.00",
+      "raw_column": "T3002800",
+      "question": "YINC-1400",
+      "survey_year": 2008,
+      "column": "received_wage"
+    },
+    {
+      "reference": "T30030.00",
+      "raw_column": "T3003000",
+      "question": "YINC-1700",
+      "survey_year": 2008,
+      "column": "wage_reported",
+      "income_year": 2007
+    },
+    {
+      "reference": "T36015.00",
+      "raw_column": "T3601500",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2009,
+      "column": "age"
+    },
+    {
+      "reference": "T36070.00",
+      "raw_column": "T3607000",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2009,
+      "column": "education_code"
+    },
+    {
+      "reference": "T36133.00",
+      "raw_column": "T3613300",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2009,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "T44058.00",
+      "raw_column": "T4405800",
+      "question": "YINC-1400",
+      "survey_year": 2009,
+      "column": "received_wage"
+    },
+    {
+      "reference": "T44060.00",
+      "raw_column": "T4406000",
+      "question": "YINC-1700",
+      "survey_year": 2009,
+      "column": "wage_reported",
+      "income_year": 2008
+    },
+    {
+      "reference": "T52014.00",
+      "raw_column": "T5201400",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2010,
+      "column": "age"
+    },
+    {
+      "reference": "T52074.00",
+      "raw_column": "T5207400",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2010,
+      "column": "education_code"
+    },
+    {
+      "reference": "T52132.00",
+      "raw_column": "T5213200",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2010,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "T60553.00",
+      "raw_column": "T6055300",
+      "question": "YINC-1400",
+      "survey_year": 2010,
+      "column": "received_wage"
+    },
+    {
+      "reference": "T60555.00",
+      "raw_column": "T6055500",
+      "question": "YINC-1700",
+      "survey_year": 2010,
+      "column": "wage_reported",
+      "income_year": 2009
+    },
+    {
+      "reference": "T66513.00",
+      "raw_column": "T6651300",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2011,
+      "column": "age"
+    },
+    {
+      "reference": "T66572.00",
+      "raw_column": "T6657200",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2011,
+      "column": "education_code"
+    },
+    {
+      "reference": "T66650.00",
+      "raw_column": "T6665000",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2011,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "T75454.00",
+      "raw_column": "T7545400",
+      "question": "YINC-1400",
+      "survey_year": 2011,
+      "column": "received_wage"
+    },
+    {
+      "reference": "T75456.00",
+      "raw_column": "T7545600",
+      "question": "YINC-1700",
+      "survey_year": 2011,
+      "column": "wage_reported",
+      "income_year": 2010
+    },
+    {
+      "reference": "T81236.00",
+      "raw_column": "T8123600",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2013,
+      "column": "age"
+    },
+    {
+      "reference": "T81296.00",
+      "raw_column": "T8129600",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2013,
+      "column": "education_code"
+    },
+    {
+      "reference": "T81359.00",
+      "raw_column": "T8135900",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2013,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "T89765.00",
+      "raw_column": "T8976500",
+      "question": "YINC-1400",
+      "survey_year": 2013,
+      "column": "received_wage"
+    },
+    {
+      "reference": "T89767.00",
+      "raw_column": "T8976700",
+      "question": "YINC-1700",
+      "survey_year": 2013,
+      "column": "wage_reported",
+      "income_year": 2012
+    },
+    {
+      "reference": "U00018.00",
+      "raw_column": "U0001800",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2015,
+      "column": "age"
+    },
+    {
+      "reference": "U00094.00",
+      "raw_column": "U0009400",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2015,
+      "column": "education_code"
+    },
+    {
+      "reference": "U00171.00",
+      "raw_column": "U0017100",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2015,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "U09567.00",
+      "raw_column": "U0956700",
+      "question": "YINC-1400",
+      "survey_year": 2015,
+      "column": "received_wage"
+    },
+    {
+      "reference": "U09569.00",
+      "raw_column": "U0956900",
+      "question": "YINC-1700",
+      "survey_year": 2015,
+      "column": "wage_reported",
+      "income_year": 2014
+    },
+    {
+      "reference": "U18385.00",
+      "raw_column": "U1838500",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2017,
+      "column": "age"
+    },
+    {
+      "reference": "U18460.00",
+      "raw_column": "U1846000",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2017,
+      "column": "education_code"
+    },
+    {
+      "reference": "U18554.00",
+      "raw_column": "U1855400",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2017,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "U28570.00",
+      "raw_column": "U2857000",
+      "question": "YINC-1400",
+      "survey_year": 2017,
+      "column": "received_wage"
+    },
+    {
+      "reference": "U28572.00",
+      "raw_column": "U2857200",
+      "question": "YINC-1700",
+      "survey_year": 2017,
+      "column": "wage_reported",
+      "income_year": 2016
+    },
+    {
+      "reference": "U34379.00",
+      "raw_column": "U3437900",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2019,
+      "column": "age"
+    },
+    {
+      "reference": "U34445.00",
+      "raw_column": "U3444500",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2019,
+      "column": "education_code"
+    },
+    {
+      "reference": "U34555.00",
+      "raw_column": "U3455500",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2019,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "U42821.00",
+      "raw_column": "U4282100",
+      "question": "YINC-1400",
+      "survey_year": 2019,
+      "column": "received_wage"
+    },
+    {
+      "reference": "U42823.00",
+      "raw_column": "U4282300",
+      "question": "YINC-1700",
+      "survey_year": 2019,
+      "column": "wage_reported",
+      "income_year": 2018
+    },
+    {
+      "reference": "U49430.00",
+      "raw_column": "U4943000",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2021,
+      "column": "age"
+    },
+    {
+      "reference": "U49502.00",
+      "raw_column": "U4950200",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2021,
+      "column": "education_code"
+    },
+    {
+      "reference": "U49587.00",
+      "raw_column": "U4958700",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2021,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "U57533.00",
+      "raw_column": "U5753300",
+      "question": "YINC-1400",
+      "survey_year": 2021,
+      "column": "received_wage"
+    },
+    {
+      "reference": "U57535.00",
+      "raw_column": "U5753500",
+      "question": "YINC-1700",
+      "survey_year": 2021,
+      "column": "wage_reported",
+      "income_year": 2020
+    },
+    {
+      "reference": "U63499.00",
+      "raw_column": "U6349900",
+      "question": "CV_AGE_INT_DATE",
+      "survey_year": 2023,
+      "column": "age"
+    },
+    {
+      "reference": "U63569.00",
+      "raw_column": "U6356900",
+      "question": "CV_HIGHEST_DEGREE_EVER_EDT",
+      "survey_year": 2023,
+      "column": "education_code"
+    },
+    {
+      "reference": "U63654.00",
+      "raw_column": "U6365400",
+      "question": "SAMPLING_WEIGHT_CC",
+      "survey_year": 2023,
+      "column": "weight_raw"
+    },
+    {
+      "reference": "U71502.00",
+      "raw_column": "U7150200",
+      "question": "YINC-1400",
+      "survey_year": 2023,
+      "column": "received_wage"
+    },
+    {
+      "reference": "U71504.00",
+      "raw_column": "U7150400",
+      "question": "YINC-1700",
+      "survey_year": 2023,
+      "column": "wage_reported",
+      "income_year": 2022
+    }
+  ]
+}

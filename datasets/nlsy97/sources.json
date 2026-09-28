@@ -1,0 +1,33 @@
+{
+  "source_url": "https://nlsinfo.org/cohort-data/nlsy97_all_1997-2023.zip",
+  "landing_page": "https://www.nlsinfo.org/content/access-data-investigator/accessing-data-cohorts",
+  "release_coverage": "1997-2023",
+  "archive_downloaded_at_utc": "2026-09-13T20:19:56.989066+00:00",
+  "selected_at": "2026-09-29",
+  "selection": "Column subsets from the official CSV; 8984 original respondents; values and missing codes retained. Analysis uses the 7423 wave-2011 respondents.",
+  "event_history_documentation": "https://www.nlsinfo.org/content/cohorts/nlsy97/other-documentation/codebook-supplement/appendix-6-event-history-creation-and-documentation",
+  "calendar_source": "https://nlsinfo.org/sites/default/files/attachments/260312/Month-week_crosswalk_with_title_nlsy97_rd21_upd.xlsx",
+  "calendar_selection": "For each month 2004-01 through 2022-12, select the week containing day 15. monthly_calendar.csv preserves official week dates and question names.",
+  "original_csv": {
+    "bytes": 8146039149,
+    "crc32": "bd09a3af"
+  },
+  "raw_files": {
+    "nlsy97_2011_selected_raw.csv": {
+      "bytes": 1748076,
+      "sha256": "28a58685d2dbe794966649eb2da131a1a3b88bc027b24ac8ed1a1f1fbab9e1c1"
+    },
+    "income_waves_raw.csv.gz": {
+      "bytes": 638047,
+      "sha256": "c181de9285c49f849b73035a4a4cd60804747d68020aecc613fdc5ac3a217b61"
+    },
+    "employment_weeks_raw.csv.gz": {
+      "bytes": 306164,
+      "sha256": "1167ca22bfe876db2ba8a66bc6c4f2205f761ab6cfdbd0dacee98ee2a38042e9"
+    },
+    "monthly_calendar.csv": {
+      "bytes": 13953,
+      "sha256": "d1d521a4f58de46ab82b8dcf716251e013d0bc4b9039ae487809cb986f779d80"
+    }
+  }
+}

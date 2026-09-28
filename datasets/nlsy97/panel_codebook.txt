@@ -1,0 +1,2397 @@
+S38011.00    [CV_AGE_INT_DATE]                              Survey Year: 2004
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+       0          18
+     105          19
+    1487          20
+    1503          21
+    1573          22
+    1508          23
+    1326          24 TO 100: Age 24 or greater
+  -------
+    7502
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7502   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1482
+ 
+Min:             19        Max:             25        Mean:               21.92
+ 
+Lead In: S38010.00[Default]
+Default Next Question: S38047.00
+--------------------------------------------------------------------------------
+S38137.01    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2004
+  SECONDARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED EDT
+ 
+The highest degree received as of the survey date (edited).
+ 
+NOTE: This round-specific variable has been converted to a cumulative version, 
+which includes data across all interivew rounds regardless of interview status. 
+Cumulative variables have a "survey round" of XRND (across rounds). The 
+cumulative version of this variable can be found by searching for the same 
+question name, replacing CV_ with CVC_.
+ 
+    1057       0 None
+     634       1 GED
+    4859       2 High school diploma (Regular 12 year program)
+     298       3 Associate/Junior college (AA)
+     611       4 Bachelor's degree (BA, BS)
+      17       5 Master's degree (MA, MS)
+       0       6 PhD
+       1       7 Professional degree (DDS, JD, MD)
+  -------
+    7477
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      25
+TOTAL =========>    7502   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:              7        Mean:                1.84
+ 
+Lead In: S38137.00[Default]
+Default Next Question: S38138.00
+--------------------------------------------------------------------------------
+S38616.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2004
+  PRIMARY VARIABLE
+
+             ROUND 8 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1482           0
+       0       30000 TO 59999: 300.00-599.99
+     315       60000 TO 99999: 600.00-999.99
+    2289      100000 TO 149999: 1000.00-1499.99
+     285      150000 TO 199999: 1500.00-1999.99
+     229      200000 TO 249999: 2000.00-2499.99
+     383      250000 TO 299999: 2500.00-2999.99
+    2369      300000 TO 349999: 3000.00-3499.99
+     993      350000 TO 399999: 3500.00-3999.99
+     552      400000 TO 449999: 4000.00-4499.99
+      59      450000 TO 499999: 4500.00-4999.99
+      16      500000 TO 549999: 5000.00-5499.99
+       9      550000 TO 599999: 5500.00-5999.99
+       2      600000 TO 649999: 6000.00-6499.99
+       0      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1802617        Mean:           215699.62
+ 
+Lead In: S38615.00[Default]
+Default Next Question: S38617.00
+--------------------------------------------------------------------------------
+S47994.00    [YINC-1400]                                    Survey Year: 2004
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2003, did you receive any income from a job such as wages, salary, 
+commissions, or tips?
+Please include any income you received from doing odd jobs, temporary or 
+seasonal work, and service in the military, the military reserves, or the 
+National Guard. Also, please be sure to include any 2003 income from the jobs 
+you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5971       1 YES
+    1457       0 NO   (Go To S47998.00)
+  -------
+    7428
+ 
+Refusal(-1)           22   (Go To S47995.00)
+Don't Know(-2)        52   (Go To S47995.00)
+TOTAL =========>    7502   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:              1        Mean:                  .8
+ 
+Lead In: S47993.00[Default]
+Default Next Question: S47996.00
+--------------------------------------------------------------------------------
+S47996.00    [YINC-1700]                                    Survey Year: 2004
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2003, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 43,000 for this variable).  Values for all cases
+at or over that level are averaged. That average is then assigned to each of the
+top 2 percent of the cases.
+ 
+      36           0
+     164           1 TO 999
+     217        1000 TO 1999
+     213        2000 TO 2999
+     217        3000 TO 3999
+     155        4000 TO 4999
+     224        5000 TO 5999
+     147        6000 TO 6999
+     142        7000 TO 7999
+     170        8000 TO 8999
+      92        9000 TO 9999
+     805       10000 TO 14999
+     644       15000 TO 19999
+     530       20000 TO 24999
+     651       25000 TO 49999
+      86       50000 TO 99999999: 50000+
+  -------
+    4493
+ 
+Refusal(-1)           32   (Go To S47997.00)
+Don't Know(-2)      1464   (Go To S47997.00)
+TOTAL =========>    5989   VALID SKIP(-4)    1513     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:          70712        Mean:            14372.87
+ 
+Lead In: S47994.00[Default] S47995.00[Default]
+Default Next Question: S47998.00
+--------------------------------------------------------------------------------
+S54010.00    [CV_AGE_INT_DATE]                              Survey Year: 2005
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+     130          20
+    1445          21
+    1507          22
+    1549          23
+    1469          24
+    1189          25
+      49          26
+       0          27 TO 99: Age 27 or greater
+  -------
+    7338
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7338   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1646
+ 
+Min:             20        Max:             26        Mean:               22.89
+ 
+Lead In: S54009.00[Default]
+Default Next Question: S54048.00
+--------------------------------------------------------------------------------
+S54133.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2005
+  SECONDARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+NOTE: This round-specific variable has been converted to a cumulative version, 
+which includes data across all interivew rounds regardless of interview status. 
+Cumulative variables have a "survey round" of XRND (across rounds). The 
+cumulative version of this variable can be found by searching for the same 
+question name, replacing CV_ with CVC_.
+ 
+     956       0 None
+     712       1 GED
+    4384       2 High school diploma (Regular 12 year program)
+     346       3 Associate/Junior college (AA)
+     883       4 Bachelor's degree (BA, BS)
+      32       5 Master's degree (MA, MS)
+       0       6 PhD
+       4       7 Professional degree (DDS, JD, MD)
+  -------
+    7317
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      21
+TOTAL =========>    7338   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:              7        Mean:                1.95
+ 
+Lead In: S54132.00[Default]
+Default Next Question: S54134.00
+--------------------------------------------------------------------------------
+S54442.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2005
+  PRIMARY VARIABLE
+
+             ROUND 9 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1646           0
+       0       30000 TO 59999: 300.00-599.99
+     214       60000 TO 99999: 600.00-999.99
+    2319      100000 TO 149999: 1000.00-1499.99
+     299      150000 TO 199999: 1500.00-1999.99
+     206      200000 TO 249999: 2000.00-2499.99
+     309      250000 TO 299999: 2500.00-2999.99
+    1640      300000 TO 349999: 3000.00-3499.99
+    1599      350000 TO 399999: 3500.00-3999.99
+     667      400000 TO 449999: 4000.00-4499.99
+      54      450000 TO 499999: 4500.00-4999.99
+      19      500000 TO 549999: 5000.00-5499.99
+       8      550000 TO 599999: 5500.00-5999.99
+       3      600000 TO 649999: 6000.00-6499.99
+       0      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1859409        Mean:           215699.61
+ 
+Lead In: S54378.00[Default]
+Default Next Question: S54443.00
+--------------------------------------------------------------------------------
+S65008.00    [YINC-1400]                                    Survey Year: 2005
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2004, did you receive any income from a job such as wages, salary, 
+commissions, or tips?
+Please include any income you received from doing odd jobs, temporary or 
+seasonal work, and service in the military, the military reserves, or the 
+National Guard. Also, please be sure to include any 2004 income from the jobs 
+you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5960       1 YES
+    1313       0 NO   (Go To S65012.00)
+  -------
+    7273
+ 
+Refusal(-1)           16   (Go To S65009.00)
+Don't Know(-2)        49   (Go To S65009.00)
+TOTAL =========>    7338   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:              1        Mean:                 .82
+ 
+Lead In: S65007.00[Default]
+Default Next Question: S65010.00
+--------------------------------------------------------------------------------
+S65010.00    [YINC-1700]                                    Survey Year: 2005
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2004, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 69,342 for this variable).  Values for all cases
+at or over that level are averaged. That average is then assigned to each of the
+top 2 percent of the cases.
+ 
+      31           0
+     122           1 TO 999
+     126        1000 TO 1999
+     175        2000 TO 2999
+     149        3000 TO 3999
+     148        4000 TO 4999
+     177        5000 TO 5999
+     131        6000 TO 6999
+     107        7000 TO 7999
+     143        8000 TO 8999
+      86        9000 TO 9999
+     755       10000 TO 14999
+     635       15000 TO 19999
+     628       20000 TO 24999
+    1071       25000 TO 49999
+     105       50000 TO 99999999: 50000+
+  -------
+    4589
+ 
+Refusal(-1)           29   (Go To S65011.00)
+Don't Know(-2)      1365   (Go To S65011.00)
+TOTAL =========>    5983   VALID SKIP(-4)    1355     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:          69342        Mean:            17316.09
+ 
+Lead In: S65008.00[Default] S65009.00[Default]
+Default Next Question: S65012.00
+--------------------------------------------------------------------------------
+S75012.00    [CV_AGE_INT_DATE]                              Survey Year: 2006
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+       0          20
+     180          21
+    1494          22
+    1539          23
+    1573          24
+    1537          25
+    1208          26
+      28          27 TO 99: Age 27 or greater
+  -------
+    7559
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:             21        Max:             27        Mean:               23.86
+ 
+Lead In: S75011.00[Default]
+Default Next Question: S75052.00
+--------------------------------------------------------------------------------
+S75142.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2006
+  SECONDARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+NOTE: This round-specific variable has been converted to a cumulative version, 
+which includes data across all interivew rounds regardless of interview status. 
+Cumulative variables have a "survey round" of XRND (across rounds). The 
+cumulative version of this variable can be found by searching for the same 
+question name, replacing CV_ with CVC_.
+ 
+     953       0 None
+     778       1 GED
+    4143       2 High school diploma (Regular 12 year program)
+     398       3 Associate/Junior college (AA)
+    1213       4 Bachelor's degree (BA, BS)
+      34       5 Master's degree (MA, MS)
+       2       6 PhD
+      13       7 Professional degree (DDS, JD, MD)
+  -------
+    7534
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      25
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              7        Mean:                2.04
+ 
+Lead In: S75141.00[Default]
+Default Next Question: S75143.00
+--------------------------------------------------------------------------------
+S75455.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2006
+  PRIMARY VARIABLE
+
+             ROUND 10 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+UNIVERSE: All
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1425           0
+       0       30000 TO 59999: 300.00-599.99
+     270       60000 TO 99999: 600.00-999.99
+    2398      100000 TO 149999: 1000.00-1499.99
+     246      150000 TO 199999: 1500.00-1999.99
+     281      200000 TO 249999: 2000.00-2499.99
+     354      250000 TO 299999: 2500.00-2999.99
+    2287      300000 TO 349999: 3000.00-3499.99
+    1258      350000 TO 399999: 3500.00-3999.99
+     404      400000 TO 449999: 4000.00-4499.99
+      37      450000 TO 499999: 4500.00-4999.99
+      13      500000 TO 549999: 5000.00-5499.99
+       9      550000 TO 599999: 5500.00-5999.99
+       1      600000 TO 649999: 6000.00-6499.99
+       0      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1852105        Mean:           215699.62
+ 
+Lead In: S75454.00[Default]
+Default Next Question: S75456.00
+--------------------------------------------------------------------------------
+S84963.00    [YINC-1400]                                    Survey Year: 2006
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2005, did you receive any income from a job such as wages, salary, 
+commissions, or tips?
+Please include any income you received from doing odd jobs, temporary or 
+seasonal work, and service in the military, the military reserves, or the 
+National Guard. Also, please be sure to include any 2005 income from the jobs 
+you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    6371       1 YES
+    1146       0 NO   (Go To S84967.00)
+  -------
+    7517
+ 
+Refusal(-1)           14   (Go To S84964.00)
+Don't Know(-2)        28   (Go To S84964.00)
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              1        Mean:                 .85
+ 
+Lead In: S84962.00[Default]
+Default Next Question: S84965.00
+--------------------------------------------------------------------------------
+S84965.00    [YINC-1700]                                    Survey Year: 2006
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2005, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 80,471 for this variable).  Values for all cases
+at or over that level are averaged. That average is then assigned to each of the
+top 2 percent of the cases.
+ 
+      29           0
+      94           1 TO 999
+     128        1000 TO 1999
+     134        2000 TO 2999
+     133        3000 TO 3999
+     100        4000 TO 4999
+     177        5000 TO 5999
+     114        6000 TO 6999
+      91        7000 TO 7999
+      94        8000 TO 8999
+      68        9000 TO 9999
+     728       10000 TO 14999
+     709       15000 TO 19999
+     689       20000 TO 24999
+    1575       25000 TO 49999
+     223       50000 TO 99999999: 50000+
+  -------
+    5086
+ 
+Refusal(-1)           48   (Go To S84966.00)
+Don't Know(-2)      1252   (Go To S84966.00)
+TOTAL =========>    6386   VALID SKIP(-4)    1173     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:          80471        Mean:            20686.46
+ 
+Lead In: S84963.00[Default] S84964.00[Default]
+Default Next Question: S84967.00
+--------------------------------------------------------------------------------
+T00085.00    [CV_AGE_INT_DATE]                              Survey Year: 2007
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+       0          20
+       0          21
+     235          22
+    1481          23
+    1531          24
+    1526          25
+    1482          26
+    1163          27 TO 99: Age 27 or greater
+  -------
+    7418
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7418   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1566
+ 
+Min:             22        Max:             28        Mean:               24.81
+ 
+Lead In: T00084.00[Default]
+Default Next Question: T00086.00
+--------------------------------------------------------------------------------
+T00146.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2007
+  SECONDARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+NOTE: This round-specific variable has been converted to a cumulative version, 
+which includes data across all interivew rounds regardless of interview status. 
+Cumulative variables have a "survey round" of XRND (across rounds). The 
+cumulative version of this variable can be found by searching for the same 
+question name, replacing CV_ with CVC_.
+ 
+     882       0 None
+     812       1 GED
+    3723       2 High school diploma (Regular 12 year program)
+     434       3 Associate/Junior college (AA)
+    1411       4 Bachelor's degree (BA, BS)
+     103       5 Master's degree (MA, MS)
+       4       6 PhD
+      25       7 Professional degree (DDS, JD, MD)
+  -------
+    7394
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      24
+TOTAL =========>    7418   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:              7        Mean:                2.15
+ 
+Lead In: T00145.00[Default]
+Default Next Question: T00147.00
+--------------------------------------------------------------------------------
+T00421.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2007
+  PRIMARY VARIABLE
+
+             ROUND 11 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+UNIVERSE: All
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1566           0
+       0       30000 TO 59999: 300.00-599.99
+     187       60000 TO 99999: 600.00-999.99
+    2458      100000 TO 149999: 1000.00-1499.99
+     230      150000 TO 199999: 1500.00-1999.99
+     194      200000 TO 249999: 2000.00-2499.99
+     324      250000 TO 299999: 2500.00-2999.99
+    1928      300000 TO 349999: 3000.00-3499.99
+    1492      350000 TO 399999: 3500.00-3999.99
+     519      400000 TO 449999: 4000.00-4499.99
+      60      450000 TO 499999: 4500.00-4999.99
+      14      500000 TO 549999: 5000.00-5499.99
+      10      550000 TO 599999: 5500.00-5999.99
+       1      600000 TO 649999: 6000.00-6499.99
+       0      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1885791        Mean:           215699.61
+ 
+Lead In: T00351.00[Default]
+Default Next Question: T00422.00
+--------------------------------------------------------------------------------
+T08896.00    [YINC-1400]                                    Survey Year: 2007
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2006, did you receive any income from a job such as wages, salary, 
+commissions, or tips?
+Please include any income you received from doing odd jobs, temporary or 
+seasonal work, and service in the military, the military reserves, or the 
+National Guard. Also, please be sure to include any 2006 income from the jobs 
+you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    6352       1 YES
+    1043       0 NO   (Go To T08900.00)
+  -------
+    7395
+ 
+Refusal(-1)            7   (Go To T08897.00)
+Don't Know(-2)        16   (Go To T08897.00)
+TOTAL =========>    7418   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:              1        Mean:                 .86
+ 
+Lead In: T08895.00[Default]
+Default Next Question: T08898.00
+--------------------------------------------------------------------------------
+T08898.00    [YINC-1700]                                    Survey Year: 2007
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2006, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 70,000 for this variable).  Values for all cases
+at or over that level are averaged. That average is then assigned to each of the
+top 2 percent of the cases.
+ 
+      46           0
+      66           1 TO 999
+      96        1000 TO 1999
+      97        2000 TO 2999
+     106        3000 TO 3999
+      84        4000 TO 4999
+     115        5000 TO 5999
+      84        6000 TO 6999
+      60        7000 TO 7999
+     114        8000 TO 8999
+      59        9000 TO 9999
+     613       10000 TO 14999
+     596       15000 TO 19999
+     687       20000 TO 24999
+    1912       25000 TO 49999
+     369       50000 TO 99999999: 50000+
+  -------
+    5104
+ 
+Refusal(-1)           38   (Go To T08899.00)
+Don't Know(-2)      1219   (Go To T08899.00)
+TOTAL =========>    6361   VALID SKIP(-4)    1057     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:         112215        Mean:            24583.49
+ 
+Lead In: T08896.00[Default] T08897.00[Default]
+Default Next Question: T08900.00
+--------------------------------------------------------------------------------
+T20111.00    [CV_AGE_INT_DATE]                              Survey Year: 2008
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+     216          23
+    1472          24
+    1511          25
+    1576          26
+    1519          27
+    1161          28
+      35          29: Age 29 or greater
+  -------
+    7490
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7490   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1494
+ 
+Min:             23        Max:             29        Mean:               25.85
+ 
+Lead In: T20110.00[Default]
+Default Next Question: T20112.00
+--------------------------------------------------------------------------------
+T20167.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2008
+  SECONDARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+NOTE: This round-specific variable has been converted to a cumulative version, 
+which includes data across all interivew rounds regardless of interview status. 
+Cumulative variables have a "survey round" of XRND (across rounds). The 
+cumulative version of this variable can be found by searching for the same 
+question name, replacing CV_ with CVC_.
+ 
+     887       0 None
+     810       1 GED
+    3607       2 High school diploma (Regular 12 year program)
+     451       3 Associate/Junior college (AA)
+    1500       4 Bachelor's degree (BA, BS)
+     159       5 Master's degree (MA, MS)
+       4       6 PhD
+      43       7 Professional degree (DDS, JD, MD)
+  -------
+    7461
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      29
+TOTAL =========>    7490   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1494
+ 
+Min:              0        Max:              7        Mean:                2.21
+ 
+Lead In: T20166.00[Default]
+Default Next Question: T20168.00
+--------------------------------------------------------------------------------
+T20225.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2008
+  PRIMARY VARIABLE
+
+             ROUND 12 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+UNIVERSE: All
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1494           0
+       0       30000 TO 59999: 300.00-599.99
+     234       60000 TO 99999: 600.00-999.99
+    2464      100000 TO 149999: 1000.00-1499.99
+     221      150000 TO 199999: 1500.00-1999.99
+     236      200000 TO 249999: 2000.00-2499.99
+     294      250000 TO 299999: 2500.00-2999.99
+    1975      300000 TO 349999: 3000.00-3499.99
+    1614      350000 TO 399999: 3500.00-3999.99
+     389      400000 TO 449999: 4000.00-4499.99
+      35      450000 TO 499999: 4500.00-4999.99
+      13      500000 TO 549999: 5000.00-5499.99
+      12      550000 TO 599999: 5500.00-5999.99
+       2      600000 TO 649999: 6000.00-6499.99
+       0      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1916540        Mean:           215699.63
+ 
+Lead In: T20224.00[Default]
+Default Next Question: T20226.00
+--------------------------------------------------------------------------------
+T30028.00    [YINC-1400]                                    Survey Year: 2008
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2007, did you receive any income from a job such as wages, salary, 
+commissions, or tips?
+Please include any income you received from doing odd jobs, temporary or 
+seasonal work, and service in the military, the military reserves, or the 
+National Guard. Also, please be sure to include any 2007 income from the jobs 
+you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    6408       1 YES
+    1036       0 NO   (Go To T30032.00)
+  -------
+    7444
+ 
+Refusal(-1)           26   (Go To T30029.00)
+Don't Know(-2)        20   (Go To T30029.00)
+TOTAL =========>    7490   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1494
+ 
+Min:              0        Max:              1        Mean:                 .86
+ 
+Lead In: T30027.00[Default]
+Default Next Question: T30030.00
+--------------------------------------------------------------------------------
+T30030.00    [YINC-1700]                                    Survey Year: 2008
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2007, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 74,900 for this variable).  Values for all cases
+at or over that level are averaged. That average is then assigned to each of the
+top 2 percent of the cases.
+ 
+      37           0
+      75           1 TO 999
+      68        1000 TO 1999
+      81        2000 TO 2999
+      90        3000 TO 3999
+      64        4000 TO 4999
+     126        5000 TO 5999
+      69        6000 TO 6999
+      54        7000 TO 7999
+      99        8000 TO 8999
+      49        9000 TO 9999
+     559       10000 TO 14999
+     569       15000 TO 19999
+     630       20000 TO 24999
+    2285       25000 TO 49999
+     609       50000 TO 99999999: 50000+
+  -------
+    5464
+ 
+Refusal(-1)           70   (Go To T30031.00)
+Don't Know(-2)       882   (Go To T30031.00)
+TOTAL =========>    6416   VALID SKIP(-4)    1074     NON-INTERVIEW(-5)    1494
+ 
+Min:              0        Max:         104353        Mean:            27749.27
+ 
+Lead In: T30028.00[Default] T30029.00[Default]
+Default Next Question: T30032.00
+--------------------------------------------------------------------------------
+T36015.00    [CV_AGE_INT_DATE]                              Survey Year: 2009
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+     325          24
+    1494          25
+    1569          26
+    1526          27
+    1531          28
+    1102          29
+      12          30 TO 31: Age 30 or greater
+  -------
+    7559
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:             24        Max:             30        Mean:               26.77
+ 
+Lead In: T36014.00[Default]
+Default Next Question: T36016.00
+--------------------------------------------------------------------------------
+T36070.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2009
+  SECONDARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+NOTE: This round-specific variable has been converted to a cumulative version, 
+which includes data across all interivew rounds regardless of interview status. 
+Cumulative variables have a "survey round" of XRND (across rounds). The 
+cumulative version of this variable can be found by searching for the same 
+question name, replacing CV_ with CVC_.
+ 
+     821       0 None
+     877       1 GED
+    3529       2 High school diploma (Regular 12 year program)
+     488       3 Associate/Junior college (AA)
+    1524       4 Bachelor's degree (BA, BS)
+     225       5 Master's degree (MA, MS)
+       8       6 PhD
+      54       7 Professional degree (DDS, JD, MD)
+  -------
+    7526
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      33
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              7        Mean:                2.26
+ 
+Lead In: T36069.00[Default]
+Default Next Question: T36071.00
+--------------------------------------------------------------------------------
+T36133.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2009
+  PRIMARY VARIABLE
+
+             ROUND 13 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1425           0
+       0       30000 TO 59999: 300.00-599.99
+     386       60000 TO 99999: 600.00-999.99
+    2373      100000 TO 149999: 1000.00-1499.99
+     204      150000 TO 199999: 1500.00-1999.99
+     237      200000 TO 249999: 2000.00-2499.99
+     336      250000 TO 299999: 2500.00-2999.99
+    2032      300000 TO 349999: 3000.00-3499.99
+    1587      350000 TO 399999: 3500.00-3999.99
+     348      400000 TO 449999: 4000.00-4499.99
+      27      450000 TO 499999: 4500.00-4999.99
+      16      500000 TO 549999: 5000.00-5499.99
+       9      550000 TO 599999: 5500.00-5999.99
+       3      600000 TO 649999: 6000.00-6499.99
+       0      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1891182        Mean:           215699.61
+ 
+Lead In: T36132.00[Default]
+Default Next Question: T36134.00
+--------------------------------------------------------------------------------
+T44058.00    [YINC-1400]                                    Survey Year: 2009
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2008, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2008 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    6362       1 YES
+    1170       0 NO   (Go To T44062.00)
+  -------
+    7532
+ 
+Refusal(-1)           15   (Go To T44059.00)
+Don't Know(-2)        12   (Go To T44059.00)
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              1        Mean:                 .84
+ 
+Lead In: T44057.00[Default]
+Default Next Question: T44060.00
+--------------------------------------------------------------------------------
+T44060.00    [YINC-1700]                                    Survey Year: 2009
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2008, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 84,000 for this variable).  Values for all cases
+at or over that level are averaged. That average is then assigned to each of the
+top 2 percent of the cases.
+ 
+      35           0
+      80           1 TO 999
+      69        1000 TO 1999
+      74        2000 TO 2999
+      79        3000 TO 3999
+      75        4000 TO 4999
+     103        5000 TO 5999
+      61        6000 TO 6999
+      55        7000 TO 7999
+      78        8000 TO 8999
+      43        9000 TO 9999
+     529       10000 TO 14999
+     493       15000 TO 19999
+     615       20000 TO 24999
+    2471       25000 TO 49999
+     802       50000 TO 99999999: 50000+
+  -------
+    5662
+ 
+Refusal(-1)           54   (Go To T44061.00)
+Don't Know(-2)       654   (Go To T44061.00)
+TOTAL =========>    6370   VALID SKIP(-4)    1189     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:         121993        Mean:            30306.99
+ 
+Lead In: T44058.00[Default] T44059.00[Default]
+Default Next Question: T44062.00
+--------------------------------------------------------------------------------
+T52014.00    [CV_AGE_INT_DATE]                              Survey Year: 2010
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+     195          25
+    1484          26
+    1508          27
+    1540          28
+    1530          29
+    1202          30
+      20          31
+  -------
+    7479
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7479   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1505
+ 
+Min:             25        Max:             31        Mean:               27.86
+ 
+Lead In: T52013.00[Default]
+Default Next Question: T52015.00
+--------------------------------------------------------------------------------
+T52074.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2010
+  PRIMARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+     778       0 None
+     913       1 GED
+    3363       2 High school diploma (Regular 12 year program)
+     510       3 Associate/Junior college (AA)
+    1511       4 Bachelor's degree (BA, BS)
+     289       5 Master's degree (MA, MS)
+      10       6 PhD
+      66       7 Professional degree (DDS, JD, MD)
+  -------
+    7440
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      39
+TOTAL =========>    7479   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1505
+ 
+Min:              0        Max:              7        Mean:                2.31
+ 
+Lead In: T52073.00[Default]
+Default Next Question: T52075.00
+--------------------------------------------------------------------------------
+T52132.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2010
+  PRIMARY VARIABLE
+
+             ROUND 14 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1505           0
+       0       30000 TO 59999: 300.00-599.99
+     332       60000 TO 99999: 600.00-999.99
+    2359      100000 TO 149999: 1000.00-1499.99
+     244      150000 TO 199999: 1500.00-1999.99
+     262      200000 TO 249999: 2000.00-2499.99
+     309      250000 TO 299999: 2500.00-2999.99
+    1722      300000 TO 349999: 3000.00-3499.99
+    1714      350000 TO 399999: 3500.00-3999.99
+     455      400000 TO 449999: 4000.00-4499.99
+      55      450000 TO 499999: 4500.00-4999.99
+      15      500000 TO 549999: 5000.00-5499.99
+       9      550000 TO 599999: 5500.00-5999.99
+       2      600000 TO 649999: 6000.00-6499.99
+       0      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1922275        Mean:            215699.6
+ 
+Lead In: T52131.00[Default]
+Default Next Question: T52133.00
+--------------------------------------------------------------------------------
+T60553.00    [YINC-1400]                                    Survey Year: 2010
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2009, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2009 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5941       1 YES
+    1509       0 NO   (Go To T60557.00)
+  -------
+    7450
+ 
+Refusal(-1)           19   (Go To T60554.00)
+Don't Know(-2)         8   (Go To T60554.00)
+TOTAL =========>    7477   VALID SKIP(-4)       2     NON-INTERVIEW(-5)    1505
+ 
+Min:              0        Max:              1        Mean:                  .8
+ 
+Lead In: T60552.00[Default]
+Default Next Question: T60555.00
+--------------------------------------------------------------------------------
+T60555.00    [YINC-1700]                                    Survey Year: 2010
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2009, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 88,000 for this variable).  Values for all cases
+at or over that level are averaged. That average is then assigned to each of the
+top 2 percent of the cases.
+ 
+      37           0
+      85           1 TO 999
+      55        1000 TO 1999
+      77        2000 TO 2999
+      71        3000 TO 3999
+      60        4000 TO 4999
+      83        5000 TO 5999
+      52        6000 TO 6999
+      45        7000 TO 7999
+      66        8000 TO 8999
+      48        9000 TO 9999
+     465       10000 TO 14999
+     474       15000 TO 19999
+     564       20000 TO 24999
+    2183       25000 TO 49999
+     893       50000 TO 99999999: 50000+
+  -------
+    5258
+ 
+Refusal(-1)           45   (Go To T60556.00)
+Don't Know(-2)       641   (Go To T60556.00)
+TOTAL =========>    5944   VALID SKIP(-4)    1535     NON-INTERVIEW(-5)    1505
+ 
+Min:              0        Max:         130254        Mean:             31785.2
+ 
+Lead In: T60553.00[Default] T60554.00[Default]
+Default Next Question: T60557.00
+--------------------------------------------------------------------------------
+T66513.00    [CV_AGE_INT_DATE]                              Survey Year: 2011
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+     344          26
+    1501          27
+    1500          28
+    1512          29
+    1524          30
+    1028          31
+      14          32
+  -------
+    7423
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7423   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1561
+ 
+Min:             26        Max:             32        Mean:               28.74
+ 
+Lead In: T66512.00[Default]
+Default Next Question: T66514.00
+--------------------------------------------------------------------------------
+T66572.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2011
+  PRIMARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+     745       0 None
+     934       1 GED
+    3272       2 High school diploma (Regular 12 year program)
+     537       3 Associate/Junior college (AA)
+    1465       4 Bachelor's degree (BA, BS)
+     345       5 Master's degree (MA, MS)
+      14       6 PhD
+      73       7 Professional degree (DDS, JD, MD)
+  -------
+    7385
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      38
+TOTAL =========>    7423   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1561
+ 
+Min:              0        Max:              7        Mean:                2.34
+ 
+Lead In: T66571.00[Default]
+Default Next Question: T66573.00
+--------------------------------------------------------------------------------
+T66650.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2011
+  PRIMARY VARIABLE
+
+             ROUND 15 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1561           0
+       0       30000 TO 59999: 300.00-599.99
+     282       60000 TO 99999: 600.00-999.99
+    2436      100000 TO 149999: 1000.00-1499.99
+     201      150000 TO 199999: 1500.00-1999.99
+     266      200000 TO 249999: 2000.00-2499.99
+     322      250000 TO 299999: 2500.00-2999.99
+    1513      300000 TO 349999: 3000.00-3499.99
+    1585      350000 TO 399999: 3500.00-3999.99
+     703      400000 TO 449999: 4000.00-4499.99
+      80      450000 TO 499999: 4500.00-4999.99
+      19      500000 TO 549999: 5000.00-5499.99
+      12      550000 TO 599999: 5500.00-5999.99
+       3      600000 TO 649999: 6000.00-6499.99
+       0      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1937782        Mean:            215699.6
+ 
+Lead In: T66649.00[Default]
+Default Next Question: T66651.00
+--------------------------------------------------------------------------------
+T75454.00    [YINC-1400]                                    Survey Year: 2011
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2010, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2010 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5887       1 YES
+    1516       0 NO   (Go To T75458.00)
+  -------
+    7403
+ 
+Refusal(-1)           12   (Go To T75455.00)
+Don't Know(-2)         8   (Go To T75455.00)
+TOTAL =========>    7423   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1561
+ 
+Min:              0        Max:              1        Mean:                  .8
+ 
+Lead In: T75453.00[Default]
+Default Next Question: T75456.00
+--------------------------------------------------------------------------------
+T75456.00    [YINC-1700]                                    Survey Year: 2011
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2010, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 94,000 for this variable).  Values for all cases
+at or over that level are averaged. That average is then assigned to each of the
+top 2 percent of the cases.
+ 
+      24           0
+      80           1 TO 999
+      59        1000 TO 1999
+      50        2000 TO 2999
+      56        3000 TO 3999
+      57        4000 TO 4999
+      67        5000 TO 5999
+      59        6000 TO 6999
+      58        7000 TO 7999
+      58        8000 TO 8999
+      49        9000 TO 9999
+     390       10000 TO 14999
+     473       15000 TO 19999
+     546       20000 TO 24999
+    2226       25000 TO 49999
+    1050       50000 TO 99999999: 50000+
+  -------
+    5302
+ 
+Refusal(-1)           64   (Go To T75457.00)
+Don't Know(-2)       523   (Go To T75457.00)
+TOTAL =========>    5889   VALID SKIP(-4)    1534     NON-INTERVIEW(-5)    1561
+ 
+Min:              0        Max:         146002        Mean:            34163.66
+ 
+Lead In: T75454.00[Default] T75455.00[Default]
+Default Next Question: T75458.00
+--------------------------------------------------------------------------------
+T81236.00    [CV_AGE_INT_DATE]                              Survey Year: 2013
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+      91          28
+    1350          29
+    1453          30
+    1475          31
+    1455          32
+    1239          33
+      77          34
+  -------
+    7140
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7140   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1844
+ 
+Min:             28        Max:             34        Mean:               30.96
+ 
+Lead In: T81235.00[Default]
+Default Next Question: T81237.00
+--------------------------------------------------------------------------------
+T81296.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2013
+  PRIMARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+     646       0 None
+     912       1 GED
+    3048       2 High school diploma (Regular 12 year program)
+     572       3 Associate/Junior college (AA)
+    1394       4 Bachelor's degree (BA, BS)
+     434       5 Master's degree (MA, MS)
+      29       6 PhD
+      79       7 Professional degree (DDS, JD, MD)
+  -------
+    7114
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      26
+TOTAL =========>    7140   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1844
+ 
+Min:              0        Max:              7        Mean:                2.42
+ 
+Lead In: T81295.00[Default]
+Default Next Question: T81297.00
+--------------------------------------------------------------------------------
+T81359.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2013
+  PRIMARY VARIABLE
+
+             ROUND 16 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1844           0
+       0       30000 TO 59999: 300.00-599.99
+     177       60000 TO 99999: 600.00-999.99
+    2313      100000 TO 149999: 1000.00-1499.99
+     302      150000 TO 199999: 1500.00-1999.99
+     193      200000 TO 249999: 2000.00-2499.99
+     316      250000 TO 299999: 2500.00-2999.99
+     876      300000 TO 349999: 3000.00-3499.99
+    1952      350000 TO 399999: 3500.00-3999.99
+     853      400000 TO 449999: 4000.00-4499.99
+     121      450000 TO 499999: 4500.00-4999.99
+      18      500000 TO 549999: 5000.00-5499.99
+       9      550000 TO 599999: 5500.00-5999.99
+       5      600000 TO 649999: 6000.00-6499.99
+       3      650000 TO 699999: 6500.00-6999.99
+       1      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        2009405        Mean:           215699.61
+ 
+Lead In: T81358.00[Default]
+Default Next Question: T81360.00
+--------------------------------------------------------------------------------
+T89765.00    [YINC-1400]                                    Survey Year: 2013
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2012, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2012 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5828       1 YES
+    1284       0 NO   (Go To T89769.00)
+  -------
+    7112
+ 
+Refusal(-1)           25   (Go To T89766.00)
+Don't Know(-2)         3   (Go To T89766.00)
+TOTAL =========>    7140   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1844
+ 
+Min:              0        Max:              1        Mean:                 .82
+ 
+Lead In: T89764.00[Default]
+Default Next Question: T89767.00
+--------------------------------------------------------------------------------
+T89767.00    [YINC-1700]                                    Survey Year: 2013
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2012, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 112,000 for this variable).  Values for all 
+cases at or over that level are averaged. That average is then assigned to each 
+of the top 2 percent of the cases.
+ 
+      31           0
+      50           1 TO 999
+      53        1000 TO 1999
+      51        2000 TO 2999
+      58        3000 TO 3999
+      47        4000 TO 4999
+      86        5000 TO 5999
+      55        6000 TO 6999
+      48        7000 TO 7999
+      66        8000 TO 8999
+      29        9000 TO 9999
+     357       10000 TO 14999
+     345       15000 TO 19999
+     472       20000 TO 24999
+    2127       25000 TO 49999
+    1349       50000 TO 99999999: 50000+
+  -------
+    5224
+ 
+Refusal(-1)           73   (Go To T89768.00)
+Don't Know(-2)       533   (Go To T89768.00)
+TOTAL =========>    5830   VALID SKIP(-4)    1310     NON-INTERVIEW(-5)    1844
+ 
+Min:              0        Max:         180331        Mean:            38242.89
+ 
+Lead In: T89765.00[Default] T89766.00[Default]
+Default Next Question: T89769.00
+--------------------------------------------------------------------------------
+U00018.00    [CV_AGE_INT_DATE]                              Survey Year: 2015
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+       0          28
+       0          29
+     170          30
+    1372          31
+    1437          32
+    1486          33
+    1453          34
+    1134          35
+      51          36
+  -------
+    7103
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7103   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1881
+ 
+Min:             30        Max:             36        Mean:               32.88
+ 
+Lead In: U00017.00[Default]
+Default Next Question: U00019.00
+--------------------------------------------------------------------------------
+U00094.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2015
+  PRIMARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+     615       0 None
+     929       1 GED
+    2929       2 High school diploma (Regular 12 year program)
+     591       3 Associate/Junior college (AA)
+    1392       4 Bachelor's degree (BA, BS)
+     486       5 Master's degree (MA, MS)
+      42       6 PhD
+      92       7 Professional degree (DDS, JD, MD)
+  -------
+    7076
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      27
+TOTAL =========>    7103   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1881
+ 
+Min:              0        Max:              7        Mean:                2.47
+ 
+Lead In: U00093.00[Default]
+Default Next Question: U00095.00
+--------------------------------------------------------------------------------
+U00171.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2015
+  PRIMARY VARIABLE
+
+             ROUND 17 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    1881           0
+       0       30000 TO 59999: 300.00-599.99
+     159       60000 TO 99999: 600.00-999.99
+    2312      100000 TO 149999: 1000.00-1499.99
+     319      150000 TO 199999: 1500.00-1999.99
+     192      200000 TO 249999: 2000.00-2499.99
+     311      250000 TO 299999: 2500.00-2999.99
+     725      300000 TO 349999: 3000.00-3499.99
+    2100      350000 TO 399999: 3500.00-3999.99
+     761      400000 TO 449999: 4000.00-4499.99
+     182      450000 TO 499999: 4500.00-4999.99
+      20      500000 TO 549999: 5000.00-5499.99
+      11      550000 TO 599999: 5500.00-5999.99
+       6      600000 TO 649999: 6000.00-6499.99
+       3      650000 TO 699999: 6500.00-6999.99
+       1      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        1980354        Mean:           215699.62
+ 
+Lead In: U00168.00[Default]
+Default Next Question: U00172.00
+--------------------------------------------------------------------------------
+U09567.00    [YINC-1400]                                    Survey Year: 2015
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2014, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2014 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5767       1 YES
+    1290       0 NO   (Go To U09571.00)
+  -------
+    7057
+ 
+Refusal(-1)           37   (Go To U09568.00)
+Don't Know(-2)         9   (Go To U09568.00)
+TOTAL =========>    7103   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1881
+ 
+Min:              0        Max:              1        Mean:                 .82
+ 
+Lead In: U09566.00[Default]
+Default Next Question: U09569.00
+--------------------------------------------------------------------------------
+U09569.00    [YINC-1700]                                    Survey Year: 2015
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2014, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 135,000 for this variable).  Values for all 
+cases at or over that level are averaged. That average is then assigned to each 
+of the top 2 percent of the cases.
+ 
+      23           0
+      52           1 TO 999
+      36        1000 TO 1999
+      39        2000 TO 2999
+      28        3000 TO 3999
+      23        4000 TO 4999
+      72        5000 TO 5999
+      37        6000 TO 6999
+      40        7000 TO 7999
+      46        8000 TO 8999
+      26        9000 TO 9999
+     267       10000 TO 14999
+     305       15000 TO 19999
+     397       20000 TO 24999
+    1952       25000 TO 49999
+    1644       50000 TO 99999999: 50000+
+  -------
+    4987
+ 
+Refusal(-1)           70   (Go To U09570.00)
+Don't Know(-2)       713   (Go To U09570.00)
+TOTAL =========>    5770   VALID SKIP(-4)    1333     NON-INTERVIEW(-5)    1881
+ 
+Min:              0        Max:         212641        Mean:            44181.51
+ 
+Lead In: U09567.00[Default] U09568.00[Default]
+Default Next Question: U09571.00
+--------------------------------------------------------------------------------
+U18385.00    [CV_AGE_INT_DATE]                              Survey Year: 2017
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of the interview date.
+ 
+      56          32
+    1213          33
+    1351          34
+    1407          35
+    1380          36
+    1171          37
+     156          38
+       0          39
+       0          40
+  -------
+    6734
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    6734   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2250
+ 
+Min:             32        Max:             38        Mean:               35.04
+ 
+Lead In: U18384.00[Default]
+Default Next Question: U18386.00
+--------------------------------------------------------------------------------
+U18460.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2017
+  PRIMARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+     513       0 None
+     862       1 GED
+    2693       2 High school diploma (Regular 12 year program)
+     598       3 Associate/Junior college (AA)
+    1352       4 Bachelor's degree (BA, BS)
+     540       5 Master's degree (MA, MS)
+      51       6 PhD
+      98       7 Professional degree (DDS, JD, MD)
+  -------
+    6707
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      27
+TOTAL =========>    6734   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2250
+ 
+Min:              0        Max:              7        Mean:                2.56
+ 
+Lead In: U18459.00[Default]
+Default Next Question: U18461.00
+--------------------------------------------------------------------------------
+U18554.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2017
+  PRIMARY VARIABLE
+
+             ROUND 18 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    2250           0
+       0       30000 TO 59999: 300.00-599.99
+      83       60000 TO 99999: 600.00-999.99
+    1882      100000 TO 149999: 1000.00-1499.99
+     588      150000 TO 199999: 1500.00-1999.99
+     157      200000 TO 249999: 2000.00-2499.99
+     272      250000 TO 299999: 2500.00-2999.99
+     346      300000 TO 349999: 3000.00-3499.99
+    2019      350000 TO 399999: 3500.00-3999.99
+     938      400000 TO 449999: 4000.00-4499.99
+     384      450000 TO 499999: 4500.00-4999.99
+      30      500000 TO 549999: 5000.00-5499.99
+      20      550000 TO 599999: 5500.00-5999.99
+      10      600000 TO 649999: 6000.00-6499.99
+       2      650000 TO 699999: 6500.00-6999.99
+       1      700000 TO 749999: 7000.00-7499.99
+       1      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        2007281        Mean:           215699.61
+ 
+Lead In: U18553.00[Default]
+Default Next Question: U18555.00
+--------------------------------------------------------------------------------
+U28570.00    [YINC-1400]                                    Survey Year: 2017
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2016, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2016 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5510       1 YES
+    1173       0 NO   (Go To U28574.00)
+  -------
+    6683
+ 
+Refusal(-1)           39   (Go To U28571.00)
+Don't Know(-2)         9   (Go To U28571.00)
+Invalid Skip(-3)       3
+TOTAL =========>    6734   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2250
+ 
+Min:              0        Max:              1        Mean:                 .82
+ 
+Lead In: U28569.00[Default]
+Default Next Question: U28572.00
+--------------------------------------------------------------------------------
+U28572.00    [YINC-1700]                                    Survey Year: 2017
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2016, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 149,000 for this variable).  Values for all 
+cases at or over that level are averaged. That average is then assigned to each 
+of the top 2 percent of the cases.
+ 
+      31           0
+     159           1 TO 4999
+     174        5000 TO 9999
+     239       10000 TO 14999
+     256       15000 TO 19999
+     329       20000 TO 24999
+     397       25000 TO 29999
+     799       30000 TO 39999
+     724       40000 TO 49999
+     546       50000 TO 59999
+     396       60000 TO 69999
+     280       70000 TO 79999
+     191       80000 TO 89999
+     138       90000 TO 99999
+     311      100000 TO 149999
+     121      150000 TO 99999999: 150000+
+  -------
+    5091
+ 
+Refusal(-1)           68   (Go To U28573.00)
+Don't Know(-2)       362   (Go To U28573.00)
+Invalid Skip(-3)       2
+TOTAL =========>    5523   VALID SKIP(-4)    1211     NON-INTERVIEW(-5)    2250
+ 
+Min:              0        Max:         235884        Mean:            49477.02
+ 
+Lead In: U28570.00[Default] U28571.00[Default]
+Default Next Question: U28574.00
+--------------------------------------------------------------------------------
+U34379.00    [CV_AGE_INT_DATE]                              Survey Year: 2019
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+       0          33
+     194          34
+    1353          35
+    1396          36
+    1439          37
+    1424          38
+    1087          39
+      54          40
+  -------
+    6947
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    6947   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2037
+ 
+Min:             34        Max:             40        Mean:               36.87
+ 
+Lead In: U34378.00[Default]
+Default Next Question: U34380.00
+--------------------------------------------------------------------------------
+U34445.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2019
+  PRIMARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+     504       0 None
+     887       1 GED
+    2749       2 High school diploma (Regular 12 year program)
+     632       3 Associate/Junior college (AA)
+    1397       4 Bachelor's degree (BA, BS)
+     592       5 Master's degree (MA, MS)
+      57       6 PhD
+     104       7 Professional degree (DDS, JD, MD)
+  -------
+    6922
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      25
+TOTAL =========>    6947   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2037
+ 
+Min:              0        Max:              7        Mean:                2.59
+ 
+Lead In: U34444.00[Default]
+Default Next Question: U34446.00
+--------------------------------------------------------------------------------
+U34555.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2019
+  PRIMARY VARIABLE
+
+             ROUND 19 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    2037           0
+       0       30000 TO 59999: 300.00-599.99
+     106       60000 TO 99999: 600.00-999.99
+    2102      100000 TO 149999: 1000.00-1499.99
+     454      150000 TO 199999: 1500.00-1999.99
+     178      200000 TO 249999: 2000.00-2499.99
+     250      250000 TO 299999: 2500.00-2999.99
+     778      300000 TO 349999: 3000.00-3499.99
+    2065      350000 TO 399999: 3500.00-3999.99
+     727      400000 TO 449999: 4000.00-4499.99
+     241      450000 TO 499999: 4500.00-4999.99
+      21      500000 TO 549999: 5000.00-5499.99
+      13      550000 TO 599999: 5500.00-5999.99
+       8      600000 TO 649999: 6000.00-6499.99
+       3      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        2004366        Mean:           215699.61
+ 
+Lead In: U34554.00[Default]
+Default Next Question: U34556.00
+--------------------------------------------------------------------------------
+U42821.00    [YINC-1400]                                    Survey Year: 2019
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2018, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2018 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5737       1 YES
+    1156       0 NO   (Go To U42825.00)
+  -------
+    6893
+ 
+Refusal(-1)           47   (Go To U42822.00)
+Don't Know(-2)         3   (Go To U42822.00)
+TOTAL =========>    6943   VALID SKIP(-4)       4     NON-INTERVIEW(-5)    2037
+ 
+Min:              0        Max:              1        Mean:                 .83
+ 
+Lead In: U42820.00[Default]
+Default Next Question: U42823.00
+--------------------------------------------------------------------------------
+U42823.00    [YINC-1700]                                    Survey Year: 2019
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2018, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 178,000 for this variable).  Values for all 
+cases at or over that level are averaged. That average is then assigned to each 
+of the top 2 percent of the cases.
+ 
+      36           0
+     146           1 TO 4999
+     159        5000 TO 9999
+     198       10000 TO 14999
+     232       15000 TO 19999
+     298       20000 TO 24999
+     355       25000 TO 29999
+     768       30000 TO 39999
+     684       40000 TO 49999
+     620       50000 TO 59999
+     490       60000 TO 69999
+     350       70000 TO 79999
+     276       80000 TO 89999
+     163       90000 TO 99999
+     428      100000 TO 149999
+     209      150000 TO 99999999: 150000+
+  -------
+    5412
+ 
+Refusal(-1)           66   (Go To U42824.00)
+Don't Know(-2)       269   (Go To U42824.00)
+TOTAL =========>    5747   VALID SKIP(-4)    1200     NON-INTERVIEW(-5)    2037
+ 
+Min:              0        Max:         328451        Mean:            57217.16
+ 
+Lead In: U42821.00[Default] U42822.00[Default]
+Default Next Question: U42825.00
+--------------------------------------------------------------------------------
+U49430.00    [CV_AGE_INT_DATE]                              Survey Year: 2021
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+     192          36
+    1250          37
+    1361          38
+    1361          39
+    1411          40
+    1041          41
+      97          42
+  -------
+    6713
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    6713   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2271
+ 
+Min:             36        Max:             42        Mean:                38.9
+ 
+Lead In: U49429.00[Default]
+Default Next Question: U49431.00
+--------------------------------------------------------------------------------
+U49502.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2021
+  PRIMARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+     501       0 None
+     871       1 GED
+    2564       2 High school diploma (Regular 12 year program)
+     621       3 Associate/Junior college (AA)
+    1351       4 Bachelor's degree (BA, BS)
+     614       5 Master's degree (MA, MS)
+      59       6 PhD
+     106       7 Professional degree (DDS, JD, MD)
+  -------
+    6687
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      26
+TOTAL =========>    6713   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2271
+ 
+Min:              0        Max:              7        Mean:                2.61
+ 
+Lead In: U49501.00[Default]
+Default Next Question: U49503.00
+--------------------------------------------------------------------------------
+U49587.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2021
+  PRIMARY VARIABLE
+
+             ROUND 20 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    2271           0
+       0       30000 TO 59999: 300.00-599.99
+      79       60000 TO 99999: 600.00-999.99
+    1981      100000 TO 149999: 1000.00-1499.99
+     534      150000 TO 199999: 1500.00-1999.99
+     154      200000 TO 249999: 2000.00-2499.99
+     218      250000 TO 299999: 2500.00-2999.99
+     267      300000 TO 349999: 3000.00-3499.99
+    1918      350000 TO 399999: 3500.00-3999.99
+    1021      400000 TO 449999: 4000.00-4499.99
+     466      450000 TO 499999: 4500.00-4999.99
+      44      500000 TO 549999: 5000.00-5499.99
+      16      550000 TO 599999: 5500.00-5999.99
+      11      600000 TO 649999: 6000.00-6499.99
+       2      650000 TO 699999: 6500.00-6999.99
+       1      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        2109085        Mean:            215699.6
+ 
+Lead In: U49586.00[Default]
+Default Next Question: U49588.00
+--------------------------------------------------------------------------------
+U57533.00    [YINC-1400]                                    Survey Year: 2021
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2020, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2020 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5495       1 YES
+    1162       0 NO   (Go To U57537.00)
+  -------
+    6657
+ 
+Refusal(-1)           46   (Go To U57534.00)
+Don't Know(-2)         9   (Go To U57534.00)
+Invalid Skip(-3)       1
+TOTAL =========>    6713   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2271
+ 
+Min:              0        Max:              1        Mean:                 .83
+ 
+Lead In: U57532.00[Default]
+Default Next Question: U57535.00
+--------------------------------------------------------------------------------
+U57535.00    [YINC-1700]                                    Survey Year: 2021
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2020, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: Truncated values are applied to the top 2 percent of respondents with 
+valid non-missing responses.  The lowest value for the top 2 percent of cases is
+used as the truncation level ($ 215,000 for this variable).  Values for all 
+cases at or over that level are averaged. That average is then assigned to each 
+of the top 2 percent of the cases.
+ 
+      31           0
+      47           1 TO 999
+      36        1000 TO 1999
+      31        2000 TO 2999
+      28        3000 TO 3999
+      29        4000 TO 4999
+      61        5000 TO 5999
+      26        6000 TO 6999
+      20        7000 TO 7999
+      29        8000 TO 8999
+      13        9000 TO 9999
+     210       10000 TO 14999
+     193       15000 TO 19999
+     232       20000 TO 24999
+    1514       25000 TO 49999
+    2701       50000 TO 99999999: 50000+
+  -------
+    5201
+ 
+Refusal(-1)           75   (Go To U57536.00)
+Don't Know(-2)       224   (Go To U57536.00)
+TOTAL =========>    5500   VALID SKIP(-4)    1213     NON-INTERVIEW(-5)    2271
+ 
+Min:              0        Max:         380288        Mean:            62888.01
+ 
+Lead In: U57533.00[Default] U57534.00[Default]
+Default Next Question: U57537.00
+--------------------------------------------------------------------------------
+U63499.00    [CV_AGE_INT_DATE]                              Survey Year: 2023
+  PRIMARY VARIABLE
+
+             RS AGE AT INTERVIEW DATE
+ 
+Age as of interview date.
+ 
+     229          38
+    1260          39
+    1335          40
+    1352          41
+    1347          42
+     980          43
+      66          44
+  -------
+    6569
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    6569   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2415
+ 
+Min:             38        Max:             44        Mean:               40.84
+ 
+Lead In: U63498.00[Default]
+Default Next Question: U63500.00
+--------------------------------------------------------------------------------
+U63569.00    [CV_HIGHEST_DEGREE_EVER_EDT]                   Survey Year: 2023
+  PRIMARY VARIABLE
+
+             HIGHEST DEGREE RECEIVED
+ 
+The highest degree received as of the survey date.
+ 
+     454       0 None
+     863       1 GED
+    2493       2 High school diploma (Regular 12 year program)
+     620       3 Associate/Junior college (AA)
+    1304       4 Bachelor's degree (BA, BS)
+     649       5 Master's degree (MA, MS)
+      62       6 PhD
+     100       7 Professional degree (DDS, JD, MD)
+  -------
+    6545
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      24
+TOTAL =========>    6569   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2415
+ 
+Min:              0        Max:              7        Mean:                2.63
+ 
+Lead In: U63568.00[Default]
+Default Next Question: U63570.00
+--------------------------------------------------------------------------------
+U63654.00    [SAMPLING_WEIGHT_CC]                           Survey Year: 2023
+  PRIMARY VARIABLE
+
+             ROUND 21 SAMPLING WEIGHT CUMULATIVE CASES METHOD
+ 
+Sampling Weight: Cumulative Cases Method   0 thru 9999999  (2 implied decimal 
+places)
+ 
+NOTE: 0 THRU 9999999 (2 IMPLIED DECIMAL PLACES)
+ 
+    2415           0
+       0       30000 TO 59999: 300.00-599.99
+      56       60000 TO 99999: 600.00-999.99
+    1906      100000 TO 149999: 1000.00-1499.99
+     547      150000 TO 199999: 1500.00-1999.99
+     172      200000 TO 249999: 2000.00-2499.99
+     227      250000 TO 299999: 2500.00-2999.99
+     193      300000 TO 349999: 3000.00-3499.99
+    1642      350000 TO 399999: 3500.00-3999.99
+    1122      400000 TO 449999: 4000.00-4499.99
+     591      450000 TO 499999: 4500.00-4999.99
+      79      500000 TO 549999: 5000.00-5499.99
+      19      550000 TO 599999: 5500.00-5999.99
+      10      600000 TO 649999: 6000.00-6499.99
+       4      650000 TO 699999: 6500.00-6999.99
+       0      700000 TO 749999: 7000.00-7499.99
+       0      750000 TO 799999: 7500.00-7999.99
+       0      800000 TO 849999: 8000.00-8499.99
+       1      850000 TO 9999999: 8500.00+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:        2166243        Mean:           215699.61
+ 
+Lead In: U63653.00[Default]
+Default Next Question: U63655.00
+--------------------------------------------------------------------------------
+U71502.00    [YINC-1400]                                    Survey Year: 2023
+  PRIMARY VARIABLE
+
+             R RECEIVE INCOME FROM JOB IN PAST YEAR?
+ 
+During 2022, did you receive any income from a job such as wages, salary, 
+commissions, or tips? Please include any income you received from doing odd 
+jobs, temporary or seasonal work, and service in the military, the military 
+reserves, or the National Guard. Also, please be sure to include any 2022 income
+from the jobs you discussed with me earlier.
+ 
+UNIVERSE: All
+ 
+    5501       1 YES
+    1025       0 NO   (Go To U71506.00)
+  -------
+    6526
+ 
+Refusal(-1)           38   (Go To U71503.00)
+Don't Know(-2)         4   (Go To U71503.00)
+Invalid Skip(-3)       1
+TOTAL =========>    6569   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2415
+ 
+Min:              0        Max:              1        Mean:                 .84
+ 
+Lead In: U71501.00[Default]
+Default Next Question: U71504.00
+--------------------------------------------------------------------------------
+U71504.00    [YINC-1700]                                    Survey Year: 2023
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+During 2022, how much income did you receive from wages, salary, commissions, or
+tips from all jobs, before deductions for taxes or for anything else?
+ 
+UNIVERSE: R received income from job
+ 
+ 
+NOTE: THIS VARIABLE MAY BE TOPCODED IF DATA REQUIREMENTS ARE MET.  IF NECESSARY,
+THE TOPCODE ASSIGNED IS THE AVERAGE VALUE FOR APPROXIMATELY 2 PERCENT OF THE 
+RESPONDENTS REPORTING VALID NON-MISSING RESPONSES AT THE TOP OF THE DISTRIBUTION
+ACROSS ALL LOOPS.  ALTERNATIVE TOPCODE THRESHOLDS WILL BE APPLIED IF NECESSARY, 
+TO LOW FREQUENCY VARIABLES WITH FEWER THAN 75 VALID RESPONSES.
+ 
+      29           0
+      20           1 TO 999
+      18        1000 TO 1999
+      28        2000 TO 2999
+      30        3000 TO 3999
+      17        4000 TO 4999
+      57        5000 TO 5999
+      21        6000 TO 6999
+      10        7000 TO 7999
+      10        8000 TO 8999
+      12        9000 TO 9999
+     144       10000 TO 14999
+     131       15000 TO 19999
+     221       20000 TO 24999
+    1315       25000 TO 49999
+    3125       50000 TO 99999999: 50000+
+  -------
+    5188
+ 
+Refusal(-1)           77   (Go To U71505.00)
+Don't Know(-2)       242   (Go To U71505.00)
+TOTAL =========>    5507   VALID SKIP(-4)    1062     NON-INTERVIEW(-5)    2415
+ 
+Min:              0        Max:         416374        Mean:            73218.45
+ 
+Lead In: U71502.00[Default] U71503.00[Default]
+Default Next Question: U71506.00
+--------------------------------------------------------------------------------
